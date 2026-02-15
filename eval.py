@@ -1,4 +1,6 @@
-# This script evaluates a fine-tuned model on a given dataset and prints out the final metrics.
+"""
+Evaluate our fine-tuned qwen model on the GSM8K and Ailuminate test datasets.
+"""
 
 import argparse
 from pathlib import Path
@@ -13,7 +15,8 @@ def main(args: argparse.Namespace):
     print(f"Loading model from {model_path}...")
     print(f"Loading data from {data_path}...")
 
-    # TODO
+    print("\n--- EVALUATING MODEL ---")
+    # TODO run inference on datasets
 
     # Evaluation
     print("\n--- FINAL METRICS ---")
