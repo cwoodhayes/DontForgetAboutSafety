@@ -83,7 +83,7 @@ echo "Max new tokens:  \$MAX_NEW_TOKENS"
 python inference.py \\
     --base_model    \$BASE_MODEL \\
     --adapter_model \$ADAPTER_MODEL \\
-    --data_path     /gpfs/projects/e33188/pilot/dataset/ \\
+    --data_path     dataset/ \\
     --max_new_tokens \$MAX_NEW_TOKENS \\
     --test_and_shot  8 \\
     --do_sample
