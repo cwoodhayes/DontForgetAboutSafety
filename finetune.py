@@ -179,7 +179,7 @@ def run_training(cfg: dict, data_path: Path):
     sft_tokenizer.push_to_hub(f"{HF_USER}/{MODEL_NAME}", commit_message=commit_msg, private=False)
     print(f"[{version}] Pushed to Hub: {HF_USER}/{MODEL_NAME}")
 
-    return sft_model.base_model.model, sft_tokenizer, adapter_local
+    return sft_model, sft_tokenizer, adapter_local
 
 
 # ─── Inference ───────────────────────────────────────────────────────────────

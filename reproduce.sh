@@ -28,10 +28,17 @@ wget -nc https://www.csie.ntu.edu.tw/~b10902031/gsm8k_test_private.jsonl -O data
 wget -nc https://www.csie.ntu.edu.tw/~b10902031/ailuminate_test.csv -O dataset/ailuminate_test.csv # ailuminate test dataset (public + private)
 
 # 5.1 Run Training
-uv run train.py --config_id 0 --data_path dataset/ 
-
-uv run inference.py --base_model Qwen/Qwen2.5-7B-Instruct --adapter_model tutor369/Qwen2.5-7B-Instruct-lora-v2 --data_path dataset/ 
-uv run inference.py --base_model Qwen/Qwen2.5-7B-Instruct --adapter_model tutor369/Qwen2.5-7B-Instruct-lora-v3 --data_path dataset/ 
+# uv run train.py --config_id 0 --data_path dataset/
+# uv run train.py --config_id 1 --data_path dataset/
+# uv run train.py --config_id 2 --data_path dataset/
+# uv run train.py --config_id 3 --data_path dataset/
+# uv run train.py --config_id 4 --data_path dataset/
+# uv run train.py --config_id 5 --data_path dataset/
+# uv run train.py --config_id 6 --data_path dataset/
+# uv run train.py --config_id 7 --data_path dataset/
+# uv run train.py --config_id 8 --data_path dataset/
+# uv run train.py --config_id 9 --data_path dataset/
+# uv run train.py --config_id 10 --data_path dataset/
 
 # 5.2 Run Inference and Evaluation
 echo "--- Running Evaluation ---"
