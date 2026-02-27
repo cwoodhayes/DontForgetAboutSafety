@@ -59,9 +59,9 @@ def extract_ans_from_response(answer: str):
 
 def get_hf_token():
     load_dotenv(dotenv_path=".env", override=True)
-    token = os.getenv("HUGGINGFACE_HUB_TOKEN")
+    token = os.getenv("HF_TOKEN")
     if not token:
-        raise ValueError("HUGGINGFACE_HUB_TOKEN not found in environment or .env file.")
+        raise ValueError("HF_TOKEN not found in environment or .env file.")
     return token
 
 
